@@ -155,31 +155,31 @@ main {
     justify-content: center;
     align-items: stretch; 
     width: 100%;
+    margin-right: .04em;
 }
 
 .flex-items {
-  color: #fff;
   display: flex;
   justify-content: space-between;
+  flex: 1 1 19%;
   line-height: 1.2em;
   margin-top: .05em;
-  font-size: 1.4em;
+  font-size: .9em;
   padding: 1em;
   width: 20%;
 }
 
-#div-1,
-#div-2,
-#div-3 {
-
-}
 
 #div-1 {
-    border-right: .07em solid #5989f1;
+    border-right: .05em solid #5989f1;
+}
+
+#div-2 {
+    padding-right: 1.01em;
 }
 
 #div-3 {
-    border-left: .07em solid #5989f1;
+    border-left: .05em solid #5989f1;
 }
 
 p {
@@ -279,13 +279,28 @@ footer {
    ========================================================================== */
 
 /* If you'd like to try a different layout on Desktop and larger screens: */
+
 @media (min-width: 768px) {
+    margin-right: inherit;    
   #div-1,
   #div-2,
   #div-3 {
       /* set your flex value to 1 50% */
       flex: 1 30%;
   }
+
+  .flex-items {
+      font-size: 1.4em;
+      padding: 1em;
+  }
+      #div-1 {
+        border-right: .07em solid #5989f1;
+    }
+    
+    #div-3 {
+        border-left: .07em solid #5989f1;
+    }
+    
 
   #div-3 {
     /* set your flex value to 1 100% */
