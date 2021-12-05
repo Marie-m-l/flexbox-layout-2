@@ -94,30 +94,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/***GENERAL ***/
+
+
 
 html {
-  background-color: #fff;
+  background-color: rgb(22, 22, 22);
   height: 100%;
   width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
+  color: #fff;
+  padding: 1 1em;
   font-size: 1.25em;
   height: 100%;
-  color: #fff;
-}
-
-header,
-footer {
-  background-color: #222;
-  width: 100%;
-}
-
-main {
-  background-color: #ccc;
   width: 100%;
 }
 
@@ -125,38 +116,87 @@ header,
 footer,
 main {
     display: flex;
-    justify-content: center;
+    padding: 1em;
+}
+
+header,
+footer {
+  width: 100%;
+  text-decoration: underline;
+  text-decoration-color: #5989f1;
+  text-decoration-thickness: .2em;
+  margin: 2em 1.5em 1.4em 1.5em;
+}
+
+header {
+    justify-content: left;
     align-items: center;
+}
+
+
+
+main {
+  width: 100%;
+  border: .1em dashed #5989f1;
+  margin: 1.5em .3em 3em .3em;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    width: 100%;
 }
 
 .flex-items {
   color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  /***NEED TO MAKE THE 3 DIVS LINE UP***/
+  justify-content: space-between;
+  line-height: 1.2em;
+  margin-top: .05em;
+  font-size: 1.4em;
+  padding: 1em;
+  width: 20%;
 }
 
-/*** BY AREA ***/
+#div-1,
+#div-2,
+#div-3 {
 
-h1 {
-    /***NEED TO MAKE TEXT TO THE LEFT***/
 }
 
-div {
-    /***NEED TO 
+#div-1 {
+    border-right: .07em solid #5989f1;
 }
+
+#div-3 {
+    border-left: .07em solid #5989f1;
+}
+
+p {
+    margin: 5em 0 .5em 0;
+}
+
+a {
+    color: #5989f1;
+}
+
+footer {
+    justify-content: center;
+}
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -239,7 +279,7 @@ div {
    ========================================================================== */
 
 /* If you'd like to try a different layout on Desktop and larger screens: */
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #div-1,
   #div-2,
   #div-3 {
